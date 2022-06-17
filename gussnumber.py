@@ -1,14 +1,37 @@
 import random
-number = random.randint(1,10)
-print('welcome to Guess the Numbert Game')
 
-for i in range(0,3):
-    user=  int(input('Guess a number '))
+
+number = random.randint(1,10)
+print(f'''
+-----------------------------
+Correct answer: {number}
+-----------------------------
+    ''')
+attempt = 3
+msg = ''
+
+while attempt > 0:
+    user=  int(input('Enter Number: '))
     if number == user:
-        print('Wooooooooooooola')
-        print(f'You gussed the number right it is {number}')
+        #print('Wooooooooooooola')
+        msg = 'You Won!'
         break
-if number != user:
-    print(" You guessd wrong number sorry ")
-    print(" Try Againnnnnnnnnn")
-    
+    elif user > number:
+        print(f"{user} is greater.\n Remaning attempts: {attempt}.")
+        attempt -= 1
+    elif user < number:
+        print(f"{user} is smaller.\n Remaning attempts: {attempt}.")
+        attempt -= 1
+
+    else:
+        print('Something went Wrong')
+        break
+
+print(msg)
+
+
+
+
+
+
+
