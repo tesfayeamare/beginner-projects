@@ -1,3 +1,3 @@
 # beginner-projects
-    ''' Here is A collection of python begninner project that i exercised 
-    coding, have a look and give me feedback.'''
+    ''' Here is A collections of python begninner project that i exercised 
+    while i was learning how to code in python, have a look and give me feedback.'''
